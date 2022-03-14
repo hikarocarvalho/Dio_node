@@ -1,15 +1,15 @@
-import { Entity, Column, PrimaryColumn } from 'typeorm';
+import { Entity, Column, PrimaryColumn } from "typeorm";
 
-@Entity('users')
-class User{
-    @PrimaryColumn()
-    id: string;
+@Entity("users")
+class User {
+  @PrimaryColumn()
+  id: string;
 
-    @Column()
-    name:string;
+  @Column()
+  name: string;
 
-    @Column()
-    email?:string;
+  @Column()
+  email?: string;
 }
 
-export { User }
+export { User };

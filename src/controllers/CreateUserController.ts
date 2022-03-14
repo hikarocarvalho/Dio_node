@@ -14,9 +14,7 @@ class CreateUserController {
       return response.status(400).json({ message: "Enter with all values." });
     }
     const result = await createUserService.execute({ id, name, email });
-    return response
-      .status(201)
-      .json({ message: `user created`, response: result });
+    return response.status(201).json(result);
   }
 }
 
