@@ -1,5 +1,5 @@
 import { getRepository } from "typeorm";
-import { User } from "../entities/User";
+import { User } from "../../entities/User";
 interface IUser {
   id: string;
   name: string;
