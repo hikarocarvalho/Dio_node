@@ -1,5 +1,5 @@
 import { getConnection } from "typeorm";
-import createConnection from "../database/index";
+import createConnection from "../../database/index";
 import { CreateUserService } from "./CreateUserService";
 import { v4 as uuid } from "uuid";
 
